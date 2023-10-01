@@ -50,12 +50,10 @@ jobs:
       - name: Build library
         run: ng build collection-manager
 
-      - name: Go Dist Folder
-        run: cd dist/collection-manager
-
       - name: Publish package
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         run: |
+          cd dist/collection-manager
           echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" > .npmrc
           npm publish
