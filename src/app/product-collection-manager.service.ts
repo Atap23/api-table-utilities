@@ -1,5 +1,5 @@
 import { delay, Observable, of } from 'rxjs';
-import { CollectionManager } from '../../projects/api-table-utilities/src/lib/collection-manager';
+import { CollectionManager } from 'collection-manager';
 import { Injectable } from '@angular/core';
 
 export type Product = {

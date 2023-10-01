@@ -1,6 +1,7 @@
 {
-  "name": "api-table-utilities",
-  "version": "0.0.1",
+  "name": "collection-manager",
+  "author": "Antonio Alvarez Torres",
+  "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": "^16.2.0",
     "@angular/core": "^16.2.0"
