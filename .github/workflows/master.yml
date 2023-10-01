@@ -2,9 +2,9 @@ name: Api Table Utilities
 
 on:
   push:
-    branches: [master]
+    branches: [ master ]
   pull_request:
-    branches: [master]
+    branches: [ master ]
 
 jobs:
   test:
@@ -25,6 +25,7 @@ jobs:
         run: npm run test
   deploy:
     runs-on: ubuntu-latest
+    needs: [ test ]
 
     steps:
       - uses: actions/checkout@v3
